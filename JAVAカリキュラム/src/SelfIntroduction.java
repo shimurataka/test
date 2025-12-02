@@ -1,6 +1,6 @@
 
 public class SelfIntroduction {	
-public static void main(String[] args) {
+public static void main(String[] args) {// 中で条件定義をする
 	String name ="山田 花子";
 	int age = 25;
 	String hobby = "映画鑑賞";
