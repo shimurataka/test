@@ -34,24 +34,30 @@ public class Question1 {
 		System.out.println(shortNum - 80);
 		// 文字を並べて間にスペースを入れりために""でスペースを入れる
 		System.out.println(letter + " " + letters + " " + isBoolean);
-		
+		// doubleが含まれると小数点が出てしまうので出力する直前にlongにキャストする
 		System.out.println((long)(byteNum + shortNum + intNum + longNum + floatNum + doubleNum));
+		// longにした状態で先に掛け算をして後からフォーマット指定子で変更する
 		long resultLong = (long)byteNum * shortNum * intNum * longNum;
 		System.out.printf("%.0E\n",(double)resultLong);
+		// 割り算をする
 		System.out.println(doubleNum / shortNum);
+		// 引き算をする
 		System.out.println(byteNum - shortNum);
 		
 		// Q4
+		// 変数と初期値を設定してテキストと一緒に出力
 		String name = "山田太郎";
 		
 		System.out.println("こんにちは、" + name + "さん！");
 		
 		// Q5
+		// 変数と初期値を設定してテキストと一緒に出力
 		int age = 25;
 
 		System.out.println("年齢:" + age + "歳");
 		
 		// Q6
+		// 変数と初期値を設定して新しい変数内で足して出力
 		int num1 = 10;
 		int num2 = 5;
 		int sum = (num1 + num2);
@@ -59,6 +65,7 @@ public class Question1 {
 		System.out.println(sum);
 		
 		//Q7
+		// 変数と初期値を設定してあとから20足してテキストと一緒に出力
 		int score = 80;
 		
 		score +=20;
@@ -66,6 +73,7 @@ public class Question1 {
 		System.out.println("最終スコア:" + score);
 		
 		// Q8
+		// doubleの変数と初期値を設定して変数をintに変換してテキストと一緒に出力
 		double price = 99.99;
 
 		int convertedint = (int)price;
@@ -73,6 +81,7 @@ public class Question1 {
 		System.out.println("整数価格:" + convertedint);
 		
 		// Q9
+		// Stringの変数と初期値を設定してStringをintに変換して10を足して出力
 		String numStr = "123";
 		
 		int intNumber = Integer.parseInt(numStr);
@@ -80,6 +89,7 @@ public class Question1 {
 		System.out.println(intNumber + 10);
 		
 		// Q10
+		// int変数と初期値を設定してintをStringに変換してテキストと一緒に出力
 		int num = 50;
 		
 		String strNumber = String.valueOf(num);
@@ -87,6 +97,7 @@ public class Question1 {
 		System.out.println("得点:" + strNumber + "点");
 		
 		// Q11
+		// 変数と初期値を設定してaがbより小さいかを代入して結果を出力
 		int a =10;
 		int b = 20;
 		boolean result = a < b;
@@ -94,6 +105,7 @@ public class Question1 {
 		System.out.println(result);
 		
 		// Q12
+		// 変数と初期値を設定して10以上か比べて結果を出力
 		int x = 15;
 		
 		String resultx = (x >= 10) ? "OK" : "NG";
