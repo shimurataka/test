@@ -5,15 +5,15 @@ public class Question1 {
 	public static void main(String[] args) {
 		
 		// Q1 初期値の設定
-		Byte byteNum;
-		Short shortNum;
-		int intNum;
-		long longNum;
-		float floatNum;
-		double doubleNum;
-		char letter;
-		String letters;
-		boolean isBoolean;
+		Byte byteNum = 0;
+		Short shortNum = 0;
+		int intNum = 0;
+		long longNum = 0L;
+		float floatNum = 0.0f;
+		double doubleNum = 0.0;
+		char letter = '\u0000';
+		String letters = null;
+		boolean isBoolean = false;
 		
 		// Q2 変数の代入
 		byteNum = 10;
@@ -29,9 +29,9 @@ public class Question1 {
 		// Q3
 		
 		// 10×1111する
-		System.out.println(byteNum * 1111);
+		System.out.println(byteNum + shortNum + intNum + longNum);
 		// 100-80する
-		System.out.println(shortNum - 80);
+		System.out.println((long)floatNum + doubleNum);
 		// 文字を並べて間にスペースを入れりために""でスペースを入れる
 		System.out.println(letter + " " + letters + " " + isBoolean);
 		// doubleが含まれると小数点が出てしまうので出力する直前にlongにキャストする
@@ -120,4 +120,7 @@ public class Question1 {
 		
 		System.out.println(resultPython);
 	}
+	
 }
+
+
