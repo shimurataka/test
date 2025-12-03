@@ -13,7 +13,7 @@ public class Question2 {
 		
 		// Q2
 		int age = 25;
-		if (30 >= age && age >= 20) {
+		if (20 <= age && age <= 30) {
 			System.out.println("適正年齢です");
 		} // ageの年齢が20以上30以下だった時
 		else {
@@ -67,7 +67,7 @@ public class Question2 {
 		// Q6
 		int value = 1;
 		
-		if (value % 2 <= 0) { // 偶数の時
+		if (value % 2 == 0) { // 偶数の時
 			System.out.println("偶数です");
 		}
 		else if (value % 2 != 0) { // 奇数の時
@@ -86,11 +86,11 @@ public class Question2 {
 		else if (score7 >= 50) { // 50以上の場合
 			System.out.println("可");
 		}
-		else if (score7 < 50) { // 50以下の場合
+		else { // 50以下の場合
 			System.out.println("不可");
 		}
 		
-		//Q8
+		// Q8
 		String text = "";
 		
 		if (text== null || text.isBlank()) { // 入力されてない場合
@@ -98,6 +98,62 @@ public class Question2 {
 		}
 		else { // 入力されてる場合
 			System.out.println(text);
+		}
+		
+		// Q9
+		int day = 7;
+		
+		switch (day) { // 番号によって呼び出す曜日を設定
+		case 1: 
+			System.out.println("月曜日");
+			break;
+			
+		case 2: 
+			System.out.println("火曜日");
+			break;
+			
+		case 3: 
+			System.out.println("水曜日");
+			break;
+			
+		case 4: 
+			System.out.println("木曜日");
+			break;
+			
+		case 5: 
+			System.out.println("金曜日");
+			break;
+			
+		case 6: 
+			System.out.println("土曜日");
+			break;
+			
+		case 7: 
+			System.out.println("日曜日");
+			break;
+			
+		default:
+			System.out.println("無効な入力です");
+		}
+		
+		// Q10
+		int month = 13;
+		
+		switch (month) { // 月によって四季を振り分け
+		case 12, 1, 2:
+			System.out.println("冬");
+			break;
+		case 3, 4, 5:
+			System.out.println("春");
+			break;
+		case 6, 7, 8:
+			System.out.println("夏");
+			break;
+		case 9, 10, 11:
+			System.out.println("秋");
+			break;
+		default:
+			System.out.println("無効な月");
 		}
 	}
 }
