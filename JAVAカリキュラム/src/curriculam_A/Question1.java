@@ -1,4 +1,4 @@
-package curriculam_1;
+package curriculam_A;
 
 public class Question1 {
 
