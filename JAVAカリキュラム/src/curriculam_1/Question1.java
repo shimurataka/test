@@ -113,8 +113,11 @@ public class Question1 {
 		System.out.println(resultx);
 		
 		// Q13
+		// replaceを使ってテキストを置き換えて出力
 		String text = "私はJavaが好きです。Javaは楽しい！";
 		
+		String resultPython = text.replace("Java","Python");
 		
+		System.out.println(resultPython);
 	}
 }
