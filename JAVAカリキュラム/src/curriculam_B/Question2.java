@@ -7,10 +7,9 @@ public class Question2 {
 		// Q1
 		int score = 75;
 		if (score >= 60) {
-			
-		}
 		
-		System.out.println("合格です!");
+			System.out.println("合格です!");
+		}
 		
 		// Q2
 		int age = 25;
@@ -53,8 +52,52 @@ public class Question2 {
 		System.out.println(max);
 		
 		// Q5
-		int num = 1;
+		int num = 0;
 		
+		if (num > 0) { // 正の数の時
+			System.out.println("正の数です");
+		}
+		else if (num < 0) { // 負の数の時
+			System.out.println("負の数です");
+		}
+		else { // 0の時
+			System.out.println("0です");
+		}
 		
+		// Q6
+		int value = 1;
+		
+		if (value % 2 <= 0) { // 偶数の時
+			System.out.println("偶数です");
+		}
+		else if (value % 2 != 0) { // 奇数の時
+			System.out.println("奇数です");
+		}
+		
+		// Q7
+		int score7 = 50;
+		
+		if (score7 >= 90) { // 90以上の場合
+			System.out.println("優");
+		}
+		else if (score7 >= 70) { // 70以上の場合
+			System.out.println("良");
+		}
+		else if (score7 >= 50) { // 50以上の場合
+			System.out.println("可");
+		}
+		else if (score7 < 50) { // 50以下の場合
+			System.out.println("不可");
+		}
+		
+		//Q8
+		String text = "";
+		
+		if (text== null || text.isBlank()) { // 入力されてない場合
+			System.out.println("入力が無効です");
+		}
+		else { // 入力されてる場合
+			System.out.println(text);
+		}
 	}
 }
