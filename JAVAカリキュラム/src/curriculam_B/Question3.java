@@ -130,7 +130,6 @@ public class Question3 {
 		System.out.println("表示したい商品名を「,」（カンマ）または「、」（読点）で区切って入力してください。");
 
 		String inputLine = scanner.nextLine();
-		scanner.close(); // Scannerを閉じる
 
 		String[] productsToDisplay = inputLine.split("[,、]"); // 入力文字列を「,」または「、」で分割
 
@@ -182,6 +181,9 @@ public class Question3 {
 
 			System.out.println(outputText);
 		}
+		
+		scanner.close(); // Scannerを閉じる
+		
 	}
 
 }

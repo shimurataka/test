@@ -2,6 +2,7 @@ package curriculam_B;
 
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.Scanner;
 
 public class Question4 {
 	public static void main(String[] args) {
@@ -53,12 +54,11 @@ public class Question4 {
 		System.out.println(Arrays.toString(doubledNumbers));
 		
 		// Q6
-		/* int[] numbers6 = {4,7,10,15,20};
+		int[] numbers6 = {4,7,10,15,20};
 		
 		Scanner scanner = new Scanner(System.in); // 入力
 		
 		int targetNumber = scanner.nextInt();
-		scanner.close(); // Scannerを閉じる
 		
 		boolean found = false;
 		
@@ -74,18 +74,21 @@ public class Question4 {
 		}
 		else {
 			System.out.println(targetNumber + "は配列に含まれません");
-		}*/
+		}
 		
 		// Q7
 		int[][] array = {{1,2},{3,4},{5,6}};
 		
-		for (int i = 0; i < array.length; i++) {
-			for (int j = 0; j < array[i].length; j++) {
-				System.out.println(array[i][j] + " ");
+		for (int i = 0; i < array.length; i++) { // i行を一つずつ
+			for (int j = 0; j < array[i].length; j++) { // i行のjを一つずつ
+				System.out.print(array[i][j] + " ");
 			}
-			System.out.println();
+			System.out.println(); // 行が終わったら改行
 		}
-			
+		
+		
+		
+		scanner.close(); // Scannerを閉じる
 		
 	}
 }
