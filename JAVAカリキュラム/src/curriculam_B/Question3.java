@@ -17,17 +17,12 @@ public class Question3 {
 		for (int i2 = 2; i2 <= 20; i2++) { // 20まで1ずつ増やす
 			if (i2 % 2 != 0) { // 奇数をスキップ
 				continue;
-			} else if (i2 == 21) {
-				break; // 20でやめる
-			}
+			} 
 			System.out.println(i2);
 		}
 
 		// Q3
 		for (int i3 = 10; i3 >= 1; i3--) { // 10まで1ずつ減らす
-			if (i3 == 0) {
-				break; // 0でやめる	
-			}
 			System.out.println(i3);
 		}
 
@@ -82,7 +77,7 @@ public class Question3 {
 		System.out.println(sum2);
 
 		// Q10
-		/* Scanner scanner = new Scanner(System.in); // スキャナーを作る
+		Scanner scanner = new Scanner(System.in); // スキャナーを作る
 		int inpnum;
 		
 		while (true) { // ループさせる
@@ -100,7 +95,7 @@ public class Question3 {
 			}
 			
 		}
-		scanner.close(); // スキャナーを終了 */
+ 
 
 		// Q11
 		for (int i11x = 1; i11x <= 9; i11x++) { // X軸を初期値、上限、1ずつ増やす
@@ -132,7 +127,6 @@ public class Question3 {
 		int tvStock = rand.nextInt(TV_DISPLAY_TOTAL + 1); // テレビとディスプレイの在庫は最初に決定しておく
 		int displayStock = TV_DISPLAY_TOTAL - tvStock;
 
-		Scanner scanner = new Scanner(System.in); // 入力
 		System.out.println("表示したい商品名を「,」（カンマ）または「、」（読点）で区切って入力してください。");
 
 		String inputLine = scanner.nextLine();
@@ -169,7 +163,7 @@ public class Question3 {
 				isKnownProduct = true;
 				break;
 
-			case "パソコン": // 共通処理（その他の5商品）
+			case "パソコン": // （その他の5商品）
 			case "冷蔵庫":
 			case "扇風機":
 			case "洗濯機":
