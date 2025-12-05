@@ -1,7 +1,6 @@
 package curriculam_B;
 
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.Scanner;
 
 public class Question4 {
@@ -13,8 +12,9 @@ public class Question4 {
 
 		// Q2
 		Integer[] numbers2 = { 10, 20, 30, 40, 50 };
-		Arrays.sort(numbers2, Collections.reverseOrder()); // 変数に入れたものをひっくり返して出力
-		System.out.println(Arrays.toString(numbers2));
+		for (int i = numbers2.length - 1; i >= 0; i--) { // 変数に入れたものをひっくり返して出力
+			System.out.println(numbers2[i] + " ");
+		}
 
 		// Q3
 		int[] numbers3 = { 3, 5, 7, 9, 11 };
