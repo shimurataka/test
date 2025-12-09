@@ -24,13 +24,13 @@ public class Question5 {
 	}
 	
 	// Q5
-	public static class Animal {
+	public static class Animal { // classの追加
 		private String name;
-		private double length;
+		private double length; // フィールドの定義
 		private int speed;
 		
 		public void setName(String name) {
-			this.name = name;
+			this.name = name; // thisに引数の値を設定
 		}
 		public void setLength(double length) {
 			this.length = length;
@@ -40,7 +40,7 @@ public class Question5 {
 		}
 		
 		public String getName() {
-			return this.name;
+			return this.name; // フィールドの値を戻す
 		}
 		public double getLength() {
 			return this.length;
@@ -81,13 +81,13 @@ public class Question5 {
 		greeting.sayhello();
 		
 		// Q5
-		Animal lion = new Animal();
+		Animal lion = new Animal(); // 新しいクラスのインスタンスを作る
 		
-		lion.setName("ライオン");
+		lion.setName("ライオン"); // setterを使って変数の中身を設定する
 		lion.setLength(2.1);
 		lion.setSpeed(80);
 		
-		System.out.println("動物名:" + lion.getName());
+		System.out.println("動物名:" + lion.getName()); // getterを使って値を取得して出力
 		System.out.println("体長:" + lion.getSpeed() + "m");
 		System.out.println("速度:" + lion.getSpeed() + "km/h");
 	}
