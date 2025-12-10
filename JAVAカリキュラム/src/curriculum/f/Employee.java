@@ -12,6 +12,6 @@ public class Employee {
 	}
 	
 	public void showInfo() { // メゾット
-		System.out.println("社員ID:" + this.employeeId + ",名前:" + this.name);
+		System.out.println("社員ID: " + this.employeeId + ",名前: " + this.name);
 	}
 }

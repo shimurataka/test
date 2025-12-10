@@ -88,7 +88,7 @@ public class Question5 {
 		lion.setSpeed(80);
 		
 		System.out.println("動物名:" + lion.getName()); // getterを使って値を取得して出力
-		System.out.println("体長:" + lion.getSpeed() + "m");
+		System.out.println("体長:" + lion.getLength() + "m");
 		System.out.println("速度:" + lion.getSpeed() + "km/h");
 	}
 	
