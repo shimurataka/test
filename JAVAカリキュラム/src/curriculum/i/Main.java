@@ -3,7 +3,7 @@ package curriculum.i;
 import java.util.ArrayList;
 import java.util.List;
 
-public class main {
+public class Main {
 	public static void main(String[] args) {
 		List<Employee>employeeList = new ArrayList<>(); // Listを作ってclassで分ける
 		
