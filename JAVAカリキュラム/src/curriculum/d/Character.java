@@ -29,10 +29,10 @@ public class Character {
 	
 	public String getName() { return name; } // gettter
 	public int getHp() { return hp; }
-	public int getAt() { return hp; }
-	public int getSp() { return hp; }
+	public int getAt() { return at; }
+	public int getSp() { return sp; }
 	
-	public void damage(int amount) { // HPメゾット
+	public void damage(int amount) { // damageメゾット
 		this.hp -= amount;
 		if (this.hp < 0) {
 			this.hp = 0;
@@ -45,7 +45,7 @@ public class Character {
 	 * @return 読み込んだデータで初期化されたCharacterインスタンス
 	 */
 	public static Character loadDaemon(String fileName) {
-		try (BufferedReader bReader = new BufferedReader(new FileReader(fileName))) {
+		try (BufferedReader br = new BufferedReader(new FileReader(fileName))) {
 			String name = br.readLine();
 			int hp = Integer.parseInt(br.readLine());
 			int at = Integer.parseInt(br.readLine());
